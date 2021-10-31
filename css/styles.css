@@ -1,0 +1,96 @@
+/* ==================== General Styles ==================== */
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: lightskyblue;
+  font-size: 1.2rem;
+  line-height: 1.45;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ==================== Navigation ==================== */
+.sidebar {
+  background: gray;
+  flex: 1 1 20%;
+  min-width: 300px;
+  padding: 3em;
+}
+.logo {
+  text-transform: uppercase;
+  margin-bottom: 2em;
+}
+.nav_item {
+  color: white;
+  text-decoration: none;
+  font-size: 1.7rem;
+  display: inline-block;
+  margin-right: 2em;
+}
+
+/* ==================== Main Content Area ==================== */
+.main_content {
+  padding: 10%;
+  flex: 1 1 80%;
+  min-height: 100vh;
+}
+
+/* ==================== Portfolio ==================== */
+.portfolio {
+  display: grid;
+  height: 100%;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+.portfolio_item {
+  background: indianred;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.small {
+  grid-row: span 1;
+  grid-column: span 1;
+  background-image: url("../images/clock300.jpg");
+}
+.medium {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+.med_1 {
+  background-image: url("../images/mountain.jpg");
+}
+.med_2 {
+  background-image: url("../images/pencil.jpg");
+}
+.large {
+  grid-row: span 3;
+  grid-column: span 3;
+  background-image: url("../images/keyboard.jpg");
+}
+.tall {
+  grid-row: span 3;
+  grid-column: span 2;
+  background-image: url("../images/panda.jpg");
+}
+.wide {
+  grid-row: span 2;
+  grid-column: span 3;
+  background-image: url("../images/arch_face300.jpg");
+}
+
+/* ==================== Media Queries ==================== */
+@media (min-width: 800px) {
+  .logo {
+    margin: 5em;
+  }
+  span {
+    font-weight: bold;
+  }
+  .nav_item {
+    display: block;
+    margin: 7vh o;
+  }
+}
